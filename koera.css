@@ -1,7 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
-  }
+
+}
 
 .menu {
     background-color: rgb(224, 11, 11);
@@ -10,12 +11,12 @@ body, html {
 
 .menu a {
     color: white;
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    float:left;
+
 }
 
 .menu a:hover {
@@ -26,13 +27,17 @@ body, html {
     background-color: rgb(224, 11, 11);
 }
 
+
+.menu .icon {
+    display: none;
+  }
+
 .heropilt, img{
     text-align: center;
     background-size: cover;
     width: 100%;
     display: table;
     height: auto;
-    max-width: 100%;
     position: relative;
     
 }
@@ -47,16 +52,24 @@ body, html {
     
 }
 
-@media (min-width: 500px) {
-
-
-.heropilt {
-    height: 600px;    
-}
+.herotekst h1{
+    text-shadow: 2px 2px #000000;
 }
 
 @media screen and (max-width: 600px) {
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
     .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
     .menu.responsive a {
       float: none;
@@ -65,3 +78,33 @@ body, html {
     }
   }
 
+.andmed {
+    display:flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1vw;
+}
+  
+.andmed h1 {
+    color: rgb(224, 11, 11);
+}
+
+.andmed2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 20px;
+    font-size: 1vw;
+    text-align:center;
+}
+
+.andmed2 h1{
+    color: rgb(224, 11, 11);
+
+}
+.footer {
+    background-color: rgb(224, 11, 11);
+    color: white;
+}
