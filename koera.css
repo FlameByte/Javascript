@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.menu {
+    background-color: rgb(224, 11, 11);
+    overflow: hidden;
+}
+
+.menu a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float:left;
+}
+
+.menu a:hover {
+    background-color: rgba(49, 3, 3, 0.568);
+  }
+
+.menu a:focus {
+    background-color: rgb(224, 11, 11);
+}
+
+.heropilt, img{
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    display: table;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    
+}
+
+.herotekst {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5vw;
+    transform: translate(-50%, -50%)
+    
+}
+
+@media (min-width: 500px) {
+
+
+.heropilt {
+    height: 600px;    
+}
+}
+
+@media screen and (max-width: 600px) {
+    .menu.responsive {position: relative;}
+    }
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+

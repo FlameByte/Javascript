@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koera</title>
+    <link rel="stylesheet" href="koera.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="heropilt">
+            <img src="https://mbtimetraveler.files.wordpress.com/2016/09/sad-cute-dog-high-resolution-wallpaper-for-desktop-background-download-dog-photos-free.jpg"
+                class="pure-img">
+            <div class="herotekst">
+                <h1>Põlva loomadevarjupaik</h1>
+            </div>
+        </div>
+
+
+        <div class="menu" id="menu1">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#about">About</a>
+            <a href="#about">About</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu1");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
